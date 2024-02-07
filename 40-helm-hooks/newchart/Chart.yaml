@@ -1,0 +1,14 @@
+apiVersion: v2
+appVersion: 0.1.0
+description: A Helm chart for Kubernetes
+name: newchart
+type: application
+version: 0.1.0
+dependencies:
+  - name: mychart2
+    alias: childchart
+    repository: https://stacksimplify.github.io/helm-charts
+    version: 0.3.0
+    tags:
+    - front-end
+  
